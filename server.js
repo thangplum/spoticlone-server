@@ -79,8 +79,7 @@ const randString = function(length) {
 
       var scope = 'user-read-private user-read-email user-read-playback-state user-read-recently-played ' + 
       'playlist-modify-private streaming user-follow-read user-follow-modify user-library-modify user-read-currently-playing ' + 
-      'playlist-read-private user-read-playback-state user-top-read user-library-read user-modify-playback-state';
-
+      'playlist-read-private user-read-playback-state user-top-read user-library-read user-modify-playback-state playlist-modify-public ';
       //redirect to the spotify authentification page with the required parameters
       res.redirect('https://accounts.spotify.com/authorize?' +
         qs.stringify({
